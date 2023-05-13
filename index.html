@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,20 +22,29 @@
                 </ul>
             </div>    
         </nav>
+    
+        
         <div class="form">
             <header>Fill in the form</header>
         </div>
+        <form action="" id="my-form">
         <div class="info">
-            <label >First Name</label>
-            <input type="text" placeholder="First name">
+            <label >Full Names</label>
+            <input type="text" placeholder="Full Names" name="name">
           
-            <div class="id">
+            <div class="identity">
                 <label >Id Number</label>
-                <input type="text" placeholder="enter your id">
+                <input type="text" placeholder="enter your id" name="idno">
+            </div>
+                <div class="language">
+                    <label >languages</label>
+                    <input type="text" placeholder="Language spoken" name="language">
+
+                </div>
                 <div class="country">
 
                     <label >Country</label>
-                    <select id="country">
+                    <select id="country" name="country">
                         <option value="TS">Tunisia</option>
                         <option value="TZ">Tanzania</option>
                         <option value="UG">Uganda</option>
@@ -54,13 +64,42 @@
                         <option value="CO">Congo</option>
                         <option value="SN">Sudan</option>
                     </select>
-                   <button>submit</button>
+                   <button type="submit">submit</button>
                 </div>
-            </div>
-    
-
+            </form>
         </div>
-       
+   
+
+        <h2>user tables</h2>
+        <div class="table-user">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>id NO</th>
+                        <th>Languages</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="my-list">
+                       <!-- <td>Mark</td>
+                        <td>123456</td>
+                        <td>Spanish</td>
+                        <td>Ghana</td>
+                        <td><button class="delete">delete</button></td>
+                       -->
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+
+
+
 
 
 
@@ -68,5 +107,6 @@
 
 
     </div>
+    
 </body>
 </html>
